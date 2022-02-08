@@ -79,7 +79,7 @@ func prepare() error {
 		return err
 	}
 
-	for i := 0; i < 7 ; i++ { //Changing the value to 7
+	for i := 0; i < 10000 ; i++ { //Changing the value to 7
 		if _, err := db.Exec("INSERT INTO blog (title) VALUES (?);", fmt.Sprintf("Blog post #%d", i)); err != nil {
 			return err
 		}
